@@ -1,0 +1,15 @@
+export const WEATHER_BACKGROUNDS = {
+  Clear: '/assets/videos/Clear.mp4',
+  Rain: '/assets/videos/Rain.mp4',
+  Clouds: '/assets/videos/Clouds.mp4',
+  Snow: '/assets/videos/Snow.mp4',
+  Thunderstorm: '/assets/videos/Thunderstorm.mp4',
+  Mist: '/assets/videos/Mist.mp4',
+  Haze: '/assets/videos/Haze.mp4',
+  Fog: '/assets/videos/Fog.mp4',
+  Dust: '/assets/videos/Dust.mp4',
+  Sand: '/assets/videos/Sand.mp4',
+  Ash: '/assets/videos/Ash.mp4',
+  Squall: '/assets/videos/Squall.mp4',
+  Tornado: '/assets/videos/Tornado.mp4',
+};
