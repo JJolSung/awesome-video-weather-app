@@ -52,7 +52,7 @@ export const SearchBar = ({
           helperText={!isValidCity ? 'Invalid city' : ''}
           sx={{
             input: {
-              color: 'white',
+              color: 'black',
             },
             backgroundColor: 'rgba(255, 255, 255, 0.8)',
             borderRadius: '4px',
@@ -67,7 +67,7 @@ export const SearchBar = ({
               right: 0,
               maxHeight: '150px',
               overflowY: 'auto',
-              backgroundColor: 'rgba(0, 0, 0, 0.4)',
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
               border: '1px solid #ccc',
               borderRadius: '4px',
               zIndex: 10,
