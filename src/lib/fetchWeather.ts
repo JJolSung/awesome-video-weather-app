@@ -13,16 +13,14 @@ export async function fetchWeather(location: string) {
   return response.json();
 }
 
-interface Position {
-  coords: {
-    latitude: number;
-    longitude: number;
-  };
+interface Coords {
+  latitude: number;
+  longitude: number;
 }
 
-export async function onGeoOk(position: Position) {
-  const lat = position.coords.latitude;
-  const lon = position.coords.longitude;
+export async function onGeoOk(coords: Coords) {
+  const lat = coords.latitude;
+  const lon = coords.longitude;
 
   const url = `${BASE_URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 

@@ -76,7 +76,14 @@ export default function SearchWeather({
 
     navigator.geolocation.getCurrentPosition(async (position) => {
       try {
-        const data = await onGeoOk(position);
+        // GeolocationPosition에서 필요한 데이터만 추출
+        const coords = {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        };
+
+        // 추출된 데이터를 서버 함수에 전달
+        const data = await onGeoOk(coords);
         setWeatherData(data);
       } catch (err) {
         console.error(err);
